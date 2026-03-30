@@ -1,4 +1,4 @@
-name: pytest
+name: Python Tests
 
 on:
   push:
@@ -7,6 +7,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: python
 
     steps:
       - name: Checkout
